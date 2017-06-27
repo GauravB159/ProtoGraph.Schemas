@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "https://s3.ap-south-1.amazonaws.com/protos.dev/Schemas/toBrandAnIntersection/0.0.1/schema.json",
+  "properties": {
+    "data": {
+      "id": "/properties/data",
+      "properties": {
+        "brand_name": {
+          "default": "",
+          "description": "",
+          "id": "/properties/data/properties/brand_name",
+          "title": "Brand Name",
+          "type": "string"
+        },
+        "prism": {
+          "default": "",
+          "description": "",
+          "id": "/properties/data/properties/prism",
+          "title": "Prism",
+          "type": "string"
+        },
+        "section": {
+          "default": "",
+          "description": "",
+          "id": "/properties/data/properties/section",
+          "title": "Section",
+          "type": "string"
+        }
+      },
+      "required": [
+        "prism",
+        "brand_name",
+        "section"
+      ],
+      "type": "object",
+      "title": "Data Section"
+    },
+    "mandatory_config": {
+      "id": "/properties/mandatory_config",
+      "properties": {},
+      "type": "object",
+      "title": "Mandatory Section"
+    }
+  },
+  "required": [
+    "mandatory_config",
+    "data"
+  ],
+  "type": "object"
+}
